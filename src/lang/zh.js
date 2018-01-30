@@ -125,5 +125,11 @@ export default {
     change: '换肤',
     documentation: '换肤文档',
     tips: 'Tips: 它区别于 navbar 上的 theme-pick, 是两种不同的换肤方法，各自有不同的应用场景，具体请参考文档。'
+  },
+  dashboardPage: {
+    newSiteCount: '新增站点数',
+    newStyleCount: '新增样式数',
+    pcStyleCount: 'PC样式数',
+    mobileStyleCount: '移动样式数'
   }
 }

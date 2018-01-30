@@ -3,7 +3,7 @@ import loginAPI from './login'
 import articleAPI from './article'
 import remoteSearchAPI from './remoteSearch'
 import transactionAPI from './transaction'
-
+import dashboardAPI from './dashboard'
 // Mock.setup({
 //   timeout: '350-600'
 // })
@@ -25,5 +25,8 @@ Mock.mock(/\/search\/user/, 'get', remoteSearchAPI.searchUser)
 
 // 账单相关
 Mock.mock(/\/transaction\/list/, 'get', transactionAPI.getList)
+
+// 首页相关
+Mock.mock(/\/dashboard\/charData/, 'get', dashboardAPI.getCharData)
 
 export default Mock

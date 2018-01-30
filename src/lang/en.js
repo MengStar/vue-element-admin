@@ -130,6 +130,6 @@ export default {
     newSiteCount: 'New Site Count',
     newStyleCount: 'New Style Count',
     pcStyleCount: 'PC Style Count',
-    mobileStyleCount: 'Mobile Style Count'
+    mobileStyleCount: 'MB Style Count'
   }
 }

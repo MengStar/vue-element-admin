@@ -27,6 +27,6 @@ Mock.mock(/\/search\/user/, 'get', remoteSearchAPI.searchUser)
 Mock.mock(/\/transaction\/list/, 'get', transactionAPI.getList)
 
 // 首页相关
-Mock.mock(/\/dashboard\/charData/, 'get', dashboardAPI.getCharData)
+Mock.mock(/\/dashboard\/mainData/, 'get', dashboardAPI.getMainData)
 
 export default Mock

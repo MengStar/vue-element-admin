@@ -1,8 +1,15 @@
 import request from '@/utils/request'
 
-export function fetchChartData(query) {
+export function fetchMainData(query) {
   return request({
-    url: '/dashboard/charData',
+    url: '/dashboard/mainData',
+    method: 'get',
+    params: query
+  })
+}
+export function fetchInviteData(query) {
+  return request({
+    url: '/dashboard/inviteData',
     method: 'get',
     params: query
   })

@@ -20,6 +20,9 @@ export default {
     height: {
       type: String,
       default: '300px'
+    },
+    inviteData: {
+      type: Object
     }
   },
   data() {
@@ -56,22 +59,21 @@ export default {
         legend: {
           left: 'center',
           bottom: '10',
-          data: ['Industries', 'Technology', 'Forex', 'Gold', 'Forecasts']
+          data: ['通用型', '炫彩型', '定制型', '智能邀请']
         },
         calculable: true,
         series: [
           {
-            name: 'WEEKLY WRITE ARTICLES',
+            name: '邀请框类型',
             type: 'pie',
             roseType: 'radius',
             radius: [15, 95],
             center: ['50%', '38%'],
             data: [
-              { value: 320, name: 'Industries' },
-              { value: 240, name: 'Technology' },
-              { value: 149, name: 'Forex' },
-              { value: 100, name: 'Gold' },
-              { value: 59, name: 'Forecasts' }
+              { value: 320, name: '通用型' },
+              { value: 240, name: '炫彩型' },
+              { value: 149, name: '定制型' },
+              { value: 100, name: '智能邀请' }
             ],
             animationEasing: 'cubicInOut',
             animationDuration: 2600
